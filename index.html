@@ -14,41 +14,97 @@
 </head>
 
 <body>
-    <div id="nav">
-        <img class="logo" src="./img/logo.png" alt="">
-        <ul>
-            <li>首页</li>
-            <li>综艺</li>
-            <li>电视剧</li>
-            <li>电影</li>
-            <li>更多...</li>
-        </ul>
-        <div class="search">
-            <input type="text">
-            <div class="btn">全网搜</div>
+    <div class="top">
+        <div id="nav">
+            <div class="top-left">
+                <img class="logo" src="./img/logo.png" alt="">
+                <ul>
+                    <li>首页</li>
+                    <li>综艺</li>
+                    <li>电视剧</li>
+                    <li>电影</li>
+                    <li>更多...</li>
+                </ul>
+            </div>
+            <div class="right">
+                <div class="search">
+                    <input type="text">
+                    <div class="btn">全网搜</div>
+                </div>
+                <div class="tab-icon">
+                    <i class="iconfont icon-VIP vip"></i>
+                    <i class="iconfont icon-upload"></i>
+                    <i class="iconfont icon-message"></i>
+                    <i class="iconfont icon-time"></i>
+                    <i class="iconfont icon-tv"></i>
+                    <img src="./img/头像.jpg" class="avator">
+                </div>
+            </div>
+        </div>
+        <div class="right_list">
+            <ul>
+                <li class="line_1">爱的修行旅行
+                    <p class="p_1">合球菌曾表白奚梦瑶被拒</p>
+                </li>
+                <li class="line_2">神影
+                    <p class="p_2">命定情缘 赵露思王安宇神</p>
+                </li>
+                <li class="line_3">生生不息，嘉年华
+                    <p class="p_3">周深《桃花若》仅显国风之美</p>
+                </li>
+                <li class="line_4">你好，星期六
+                    <p class="p_4">刘诗诗脸颊比心</p>
+                </li>
+                <li class="line_5">问苍茫
+                    <p class="p_5">重现伟人革命历程</p>
+                </li>
+                <li class="line_6">感动“20周年“音乐盛典
+                    <p class="p_6">与少年时代团一起共赴青春制约</p>
+                </li>
+                <li class="line_7">名侦探学院7
+                    <p class="p_7">合球菌曾表白奚梦瑶被拒</p>
+                </li>
+                <li class="line_8">花儿与少年
+                    <p class="p_8">合球菌曾表白奚梦瑶被拒</p>
+                </li>
+                <li class="line_9">非凡医者 大结局
+                    <p class="p_9">合球菌曾表白奚梦瑶被拒</p>
+                </li>
+                <li class="line_10">对你不只喜欢
+                    <p class="p_10">恋爱教学</p>
+                </li>
+                <li class="line_11">祈福甘肃
+                    <p class="p_11">愿平安</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- <div id="nav">
+        <div class="top-left">
+            <img class="logo" src="./img/logo.png" alt="">
+            <ul>
+                <li>首页</li>
+                <li>综艺</li>
+                <li>电视剧</li>
+                <li>电影</li>
+                <li>更多...</li>
+            </ul>
         </div>
         <div class="right">
-            <div class="icon vip">
-                <i class="iconfont icon-VIP"></i>
+            <div class="search">
+                <input type="text">
+                <div class="btn">全网搜</div>
             </div>
-            <div class="icon upload">
+            <div class="tab-icon">
+                <i class="iconfont icon-VIP vip"></i>
                 <i class="iconfont icon-upload"></i>
-            </div>
-            <div class="icon message">
                 <i class="iconfont icon-message"></i>
-            </div>
-            <div class="icon time">
                 <i class="iconfont icon-time"></i>
-            </div>
-            <div class="icon tv">
                 <i class="iconfont icon-tv"></i>
-            </div>
-            <div class="icon avator">
-                <img src="./img/头像.jpg">
+                <img src="./img/头像.jpg" class="avator">
             </div>
         </div>
-        <!-- <img class="right" src="./img/右上角.png" alt=""> -->
-        <!-- <div class="right_list">
+        <div class="right_list">
             <ul>
                 <li>爱的修行旅行<p>合球菌曾表白奚梦瑶被拒</p>
                 </li>
@@ -73,8 +129,8 @@
                 <li>祈福甘肃<p>愿平安</p>
                 </li>
             </ul>
-        </div> -->
-    </div>
+        </div>
+    </div> -->
     <!-- <div id="header">
         <img src="./img/0.webp" alt="">
     </div>
@@ -300,27 +356,28 @@
         <p>杜绝虚假报道 欢迎社会监督</p>
     </div> -->
 </body>
+<!-- <script src=" https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
 <script>
-    // const li = document.querySelectorAll(".right_list>ul>li");
-    // const p = document.querySelectorAll(".right_list>ul>li>p");
-    // const img = document.querySelector("#header>img");
-    // console.log(li, p);
-    // li.forEach((item, index) => {
-    //     item.addEventListener("mouseenter", () => {
-    //         img.src = `./img/${index}.webp`;
-    //         p.forEach(item => {
-    //             item.style.display = "none";
-    //         });
-    //         p[index].style.display = "block";
-    //         item.style.fontSize = "26px";
-    //         item.style.color = "#fff";
-    //     });
-    //     item.addEventListener("mouseleave", () => {
-    //         item.style.color = "#888";
-    //         item.style.fontSize = "18px";
-    //         img.src = "./img/0.webp";
-    //     });
-    // });
-</script>
+    const li = document.querySelectorAll(".right_list>ul>li");
+    const p = document.querySelectorAll(".right_list>ul>li>p");
+    const img = document.querySelector("#header>img");
+    console.log(li, p);
+    li.forEach((item, index) => {
+        item.addEventListener("mouseenter", () => {
+            img.src = `./img/${index}.webp`;
+            p.forEach(item => {
+                item.style.display = "none";
+            });
+            p[index].style.display = "block";
+            item.style.fontSize = "26px";
+            item.style.color = "#fff";
+        });
+        item.addEventListener("mouseleave", () => {
+            item.style.color = "#888";
+            item.style.fontSize = "18px";
+            img.src = "./img/0.webp";
+        });
+    });
+</script> -->
 
 </html>

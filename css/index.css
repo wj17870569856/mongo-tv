@@ -7,16 +7,31 @@
 li {
   list-style-type: none;
 }
+.top {
+  height: 550px;
+  position: relative;
+  background: url('../img/0.webp') no-repeat center;
+}
 #nav {
   /* background-color: #fff; */
   /* position: relative; */
   /* height: 72px; */
+  width: 100%;
   line-height: 72px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   /* width: 100%; */
   /* margin: 0 auto; */
   padding: 10px 30px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+}
+.top-left {
+  display: flex;
+  align-items: center;
 }
 #nav .logo {
   width: 200px;
@@ -28,7 +43,6 @@ li {
   cursor: pointer;
 }
 #nav .search {
-  margin-left: 200px;
   height: 40px;
   width: 320px;
   background-color: rgba(0, 0, 0, 0.05);
@@ -37,6 +51,7 @@ li {
   align-items: center;
   justify-content: flex-start;
   position: relative;
+  margin: 0 20px 0 200px;
 }
 #nav .search input {
   width: 73%;
@@ -59,11 +74,24 @@ li {
   top: 0;
   right: 0;
 }
-#nav .right {}
+#nav .right {
+  display: flex;
+  align-items: center;
+}
+.tab-icon {
+  display: flex;
+  align-items: center;
+}
+
+#nav .right .iconfont {
+  font-size: 30px;
+  cursor: pointer;
+  margin: 0 10px;
 }
 
 #nav .right .vip {
-
+  font-size: 32px;
+  color: #ff5f00;
 }
 
 #nav .right .upload {
@@ -83,37 +111,121 @@ li {
 }
 
 #nav .right .avator {
-  
+  border-radius: 50%;
+  margin-left: 12px;
+  cursor: pointer;
 }
 
-#nav .right_list {
+.right_list {
   position: absolute;
-  z-index: 99;
-  top: 0;
-  background: #000000;
-  opacity: 0.7;
+  z-index: 1;
+  bottom: 0;
   right: 25px;
-  height: 532px;
-  width: 300px;
-  background-color: black;
+  width: 280px;
+  background: linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,.8) 23%,rgba(0,0,0,.8));
 }
-#nav .right_list ul {
-  opacity: 1 !important;
-  margin-top: 72px;
+.right_list ul {
+  
 }
-#nav .right_list li {
+.right_list li {
   opacity: 1;
   margin-top: 0;
   font-weight: bold;
-  color: #888;
+  color: #fff;
   line-height: 35px !important;
-  font-size: 18px;
+  font-size: 14px;
   clear: both;
+  cursor: pointer;
+  padding: 0 20px;
 }
-#nav .right_list li p {
+.right_list li p {
   display: none;
   font-size: 15px;
 }
+
+.right_list li.line_1:hover {
+  background: linear-gradient(90deg,rgba(0,0,0,.9),rgba(0,0,0,0));
+}
+.right_list li.line_1:hover .p_1 {
+  display: block;
+}
+.right_list li.line_1:hover ~ .top {
+  background-image: url('../img/0.webp');
+}
+
+.right_list li.line_2:hover {
+  background: linear-gradient(90deg,rgba(0,0,0,.9),rgba(0,0,0,0));
+}
+.right_list li.line_2:hover .p_2 {
+  display: block;
+}
+.right_list li.line_1:hover .top {
+  background-image: url('../img/1.webp');
+}
+
+.right_list li.line_3:hover {
+  background: linear-gradient(90deg,rgba(0,0,0,.9),rgba(0,0,0,0));
+}
+.right_list li.line_3:hover .p_3 {
+  display: block;
+}
+
+.right_list li.line_4:hover {
+  background: linear-gradient(90deg,rgba(0,0,0,.9),rgba(0,0,0,0));
+}
+.right_list li.line_4:hover .p_4 {
+  display: block;
+}
+
+.right_list li.line_5:hover {
+  background: linear-gradient(90deg,rgba(0,0,0,.9),rgba(0,0,0,0));
+}
+.right_list li.line_5:hover .p_5 {
+  display: block;
+}
+
+.right_list li.line_6:hover {
+  background: linear-gradient(90deg,rgba(0,0,0,.9),rgba(0,0,0,0));
+}
+.right_list li.line_6:hover .p_6 {
+  display: block;
+}
+
+.right_list li.line_7:hover {
+  background: linear-gradient(90deg,rgba(0,0,0,.9),rgba(0,0,0,0));
+}
+.right_list li.line_7:hover .p_7 {
+  display: block;
+}
+
+.right_list li.line_8:hover {
+  background: linear-gradient(90deg,rgba(0,0,0,.9),rgba(0,0,0,0));
+}
+.right_list li.line_8:hover .p_8 {
+  display: block;
+}
+
+.right_list li.line_9:hover {
+  background: linear-gradient(90deg,rgba(0,0,0,.9),rgba(0,0,0,0));
+}
+.right_list li.line_9:hover .p_9 {
+  display: block;
+}
+
+.right_list li.line_10:hover {
+  background: linear-gradient(90deg,rgba(0,0,0,.9),rgba(0,0,0,0));
+}
+.right_list li.line_10:hover .p_10 {
+  display: block;
+}
+
+.right_list li.line_11:hover {
+  background: linear-gradient(90deg,rgba(0,0,0,.9),rgba(0,0,0,0));
+}
+.right_list li.line_11:hover .p_11 {
+  display: block;
+}
+
 #header {
   height: 460px;
   width: 100%;
