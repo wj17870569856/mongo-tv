@@ -878,6 +878,48 @@ h2 .arrow:hover {
   transform: translateX(-50%);
   top: -6px;
 }
+.willfooter {
+  display: flex;
+  position: relative;
+}
+.footer-item {
+  width: 32%;
+  padding: 10px;
+  cursor: pointer;
+  position: relative;
+}
+.footer-item:first-child {
+  padding-left: 0;
+}
+.footer-item img {
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .06);
+}
+.footer-item img:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, .15);
+}
+.footer-item .arrow {
+  position: absolute;
+  cursor: pointer;
+  top: 50%;
+  right: -12px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 30px rgba(0, 0, 0, .2);
+  transform: translateY(-50%);
+  background: #fff;
+}
+.footer-item .arrow .icon-a-arrowright {
+  font-size: 20px;
+  font-weight: 900;
+}
+.footer-item .arrow:hover {
+  color: #ff5f00;
+}
 .willcome .content {
   display: flex;
 }
@@ -1121,7 +1163,6 @@ h2 .arrow:hover {
   height: 168px;
   background-color: rgb(118, 203, 139);
 }
-
 .bottom {
   height: 70px;
   display: flex;
@@ -1167,4 +1208,80 @@ h2 .arrow:hover {
 }
 .footer div {
   margin-top: 10px;
+}
+
+
+.food {
+  width: 100%;
+  display: flex;
+  padding: 25px 0px 25px 50px;
+}
+.food .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20px 22px 0;
+}
+.food .icon-a-arrowright{
+  font-size: 20px;
+  font-weight: 900;
+  cursor: pointer;
+}
+.food .food-left {
+  width: 57.5%;
+}
+.food  .arrow {
+  margin-right: 10px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.food .arrow:hover {
+  background: #fff;
+  box-shadow: 0 0 25px rgba(0, 0, 0, .1);
+  color: #ff5f00;
+}
+.food .food-bottom {
+  display: flex;
+}
+.food .food-left .food-bottom .item {
+  width: 25%;
+  padding-right:20px;
+}
+.food-bottom .item .item-img {
+  width: 100%;
+  border-radius: 4px;
+  overflow: hidden;
+  /* height: 100%; */
+}
+.food-bottom .item .item-img img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+.food-bottom .item .item-img img:hover {
+  transform: scale(1.1); /* 图片放大到原来的1.1倍 */
+}
+.food-bottom .item:hover h4 {
+  color: #ff5f00;
+}
+.food-bottom .item h4 {
+  font-size: 15px;
+  margin:6px 0 4px;
+}
+.food-bottom .item p {
+  font-size: 13px;
+  line-height: 26px;
+  color: #999;
+}
+.food .food-right {
+  flex: 1;
+}
+.food .food-right .food-bottom .item {
+  width: 33%;
+  padding-right:20px;
 }
