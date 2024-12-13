@@ -95,6 +95,7 @@ li {
   color: hsla(0,0%,100%,.7);
 }
 
+/* vip图标 */
 #nav .right .vip {
   font-size: 32px;
   color: #ddaf5a;
@@ -478,6 +479,7 @@ li {
   font-size: 13px;
 }
 
+/* banner图右侧悬浮效果 */
 .right_list li.line_1:hover {
   background: linear-gradient(90deg,rgba(0,0,0,.9),rgba(0,0,0,0));
 }
@@ -555,6 +557,7 @@ li {
   display: block;
 }
 
+/* banner图下面的导航 */
 .button_nav {
   margin-top: 20px;
   display: flex;
@@ -664,18 +667,22 @@ li {
   transition: transform 0.3s ease-in-out; /* 添加图片放大的过渡效果 */
 }
 .movie_content:hover .movie-wrapper img {
-  transform: scale(1.1); /* 图片放大到原来的1.1倍 */
+  transform: scale(1.1);
 }
 .hover_item:hover .img-wrapper img {
-  transform: scale(1.1); /* 图片放大到原来的1.1倍 */
+  transform: scale(1.1);
 }
 .hover_item:hover .big-wrapper img {
-  transform: scale(1.1); /* 图片放大到原来的1.1倍 */
+  transform: scale(1.1);
 }
 /* 悬浮缩放效果 结束 */
+
+/* 热播 */
 .hot_video {
   width: 100%;
   padding: 25px 0px 25px 50px;
+  display: flex;
+  flex-direction: column;
 }
 .hot_video .hot_head {
   height: 42px;
@@ -741,9 +748,13 @@ h2 .arrow:hover {
   margin-top: 10px;
   font-size: 13px;
 }
+
+/* 王牌节目 */
 .king_content {
   width: 100%;
   padding: 25px 0px 25px 50px;
+  display: flex;
+  flex-direction: column;
 }
 .king_content .king_box {
   margin-top: 30px;
@@ -801,6 +812,8 @@ h2 .arrow:hover {
   margin-top: 10px;
   font-size: 13px;
 }
+
+/* 电影 */
 .movie {
   width: 100%;
   padding: 25px 0px 25px 50px;
@@ -835,6 +848,9 @@ h2 .arrow:hover {
   margin-top: 10px;
   font-size: 13px;
 }
+
+
+/* 即将上线 */
 .willcome {
   padding: 25px 0px 25px 50px;
 }
@@ -1001,6 +1017,8 @@ h2 .arrow:hover {
   margin: 0 20px;
 }
 
+
+/* 即将上线悬浮框 */
 /* 第一个 */
 .will_content .details-wrapper {
   position: absolute;
@@ -1163,6 +1181,8 @@ h2 .arrow:hover {
   height: 168px;
   background-color: rgb(118, 203, 139);
 }
+
+/* 页面底部样式 */
 .bottom {
   height: 70px;
   display: flex;
@@ -1210,7 +1230,7 @@ h2 .arrow:hover {
   margin-top: 10px;
 }
 
-
+/* 美食品鉴现场 */
 .food {
   width: 100%;
   display: flex;
@@ -1286,6 +1306,8 @@ h2 .arrow:hover {
   padding-right:20px;
 }
 
+
+/* 广告 */
 .ad {
   width: 100%;
   padding: 25px 0px 25px 50px;

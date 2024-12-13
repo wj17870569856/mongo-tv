@@ -1,759 +1,1368 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>芒果TV</title>
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./iconfont/iconfont.css">
-    <style>
-    </style>
-</head>
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./iconfont/iconfont.css" />
+    <style></style>
+  </head>
 
-<body>
+  <body>
     <div class="top">
-        <div id="nav">
-            <div class="top-left">
-                <img class="logo" src="./img/logo.png" alt="">
-                <!-- <ul>
-                    <li>首页</li>
-                    <li>综艺</li>
-                    <li>电视剧</li>
-                    <li>电影</li>
-                    <li>更多...</li>
-                </ul> -->
-            </div>
-            <div class="right">
-                <div class="search">
-                    <input type="text" placeholder="爱的修行旅行">
-                    <div class="btn">全网搜</div>
-                </div>
-                <div class="tab-icon">
-                    <i class="iconfont icon-VIP vip">
-                        <span>优惠开通</span>
-                        <div class="popover">
-                            <div class="vip-top">
-                                <div class="left">
-                                    <div class="item">
-                                        <img src="./img/hd.png" alt="">
-                                        <div>热剧抢先看</div>
-                                    </div>
-                                    <div class="item">
-                                        <img src="./img/ad.png" alt="">
-                                        <div>广告特权</div>
-                                    </div>
-                                    <div class="item">
-                                        <img src="./img/hd.png" alt="">
-                                        <div>1080P</div>
-                                    </div>
-                                    <div class="item">
-                                        <img src="./img/download.png" alt="">
-                                        <div>专享缓存</div>
-                                    </div>
-                                </div>
-                                <div class="right">
-                                    <div class="title">扫码优惠开通会员</div>
-                                    <div class="code">
-                                        <img src="./img/code.png">
-                                    </div>
-                                    <div class="des"> 推荐支付宝或微信扫码开通<br>支付后刷新立享会员权益</div>
-                                </div>
-                            </div>
-                            <div class="vip-btn">立即开通</div>
-                        </div>
-                    </i>
-                    <i class="iconfont icon-upload upload">
-                        <span>创作</span>
-                    </i>
-                    <i class="iconfont icon-message message">
-                        <div class="popover">
-                            <div class="msg-top">
-                                <div class="remark">评论/回复</div>
-                                <div class="up">点赞</div>
-                            </div>
-                            <div class="content">没有收到任何消息</div>
-                            <div class="btn">查看全部</div>
-                        </div>
-                    </i>
-                    <i class="iconfont icon-time time">
-                        <div class="popover">
-                            <img src="./img/movie.png" alt="" class="tmovie">
-                            <div class="des">您还没有观看任何视频</div>
-                        </div>
-                    </i>
-                    <i class="iconfont icon-tv tv">
-                        <span>送VIP</span>
-                        <div class="popover">
-                            <div class="tv-item">
-                                <img src="./img/tv_vip.png" alt="">
-                                <div class="tv-des">VIP免费送先到先得</div>
-                            </div>
-                            <div class="tv-item">
-                                <img src="./img/tv_ad.png" alt="">
-                                <div class="tv-des">免广告超爽体验</div>
-                            </div>
-                            <div class="tv-item">
-                                <img src="./img/tv_hd.png" alt="">
-                                <div class="tv-des">1080P蓝光畅享</div>
-                            </div>
-                            <div class="tv-item">
-                                <img src="./img/tv_speed.png" alt="">
-                                <div class="tv-des">三倍流畅不卡顿</div>
-                            </div>
-                            <div class="tv-btn">立即体验</div>
-                        </div>
-                    </i>
-                    <img src="./img/头像.jpg" class="avator">
-                </div>
-            </div>
+      <div id="nav">
+        <div class="top-left">
+          <img class="logo" src="./img/logo.png" alt="" />
         </div>
-        <div class="right_list">
-            <ul>
-                <li class="line_1">爱的修行旅行
-                    <p class="p_1">合球菌曾表白奚梦瑶被拒</p>
-                </li>
-                <li class="line_2" data-bg="1.webp">神影
-                    <p class="p_2">命定情缘 赵露思王安宇神</p>
-                </li>
-                <li class="line_3">生生不息，嘉年华
-                    <p class="p_3">周深《桃花若》仅显国风之美</p>
-                </li>
-                <li class="line_4">你好，星期六
-                    <p class="p_4">刘诗诗脸颊比心</p>
-                </li>
-                <li class="line_5">问苍茫
-                    <p class="p_5">重现伟人革命历程</p>
-                </li>
-                <li class="line_6">感动“20周年“音乐盛典
-                    <p class="p_6">与少年时代团一起共赴青春制约</p>
-                </li>
-                <li class="line_7">名侦探学院7
-                    <p class="p_7">合球菌曾表白奚梦瑶被拒</p>
-                </li>
-                <li class="line_8">花儿与少年
-                    <p class="p_8">合球菌曾表白奚梦瑶被拒</p>
-                </li>
-                <li class="line_9">非凡医者 大结局
-                    <p class="p_9">合球菌曾表白奚梦瑶被拒</p>
-                </li>
-                <li class="line_10">对你不只喜欢
-                    <p class="p_10">恋爱教学</p>
-                </li>
-                <li class="line_11">祈福甘肃
-                    <p class="p_11">愿平安</p>
-                </li>
-            </ul>
+        <div class="right">
+          <div class="search">
+            <input type="text" placeholder="爱的修行旅行" />
+            <div class="btn">全网搜</div>
+          </div>
+          <div class="tab-icon">
+            <i class="iconfont icon-VIP vip">
+              <span>优惠开通</span>
+              <div class="popover">
+                <div class="vip-top">
+                  <div class="left">
+                    <div class="item">
+                      <img src="./img/hd.png" alt="" />
+                      <div>热剧抢先看</div>
+                    </div>
+                    <div class="item">
+                      <img src="./img/ad.png" alt="" />
+                      <div>广告特权</div>
+                    </div>
+                    <div class="item">
+                      <img src="./img/hd.png" alt="" />
+                      <div>1080P</div>
+                    </div>
+                    <div class="item">
+                      <img src="./img/download.png" alt="" />
+                      <div>专享缓存</div>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <div class="title">扫码优惠开通会员</div>
+                    <div class="code">
+                      <img src="./img/code.png" />
+                    </div>
+                    <div class="des">
+                      推荐支付宝或微信扫码开通<br />支付后刷新立享会员权益
+                    </div>
+                  </div>
+                </div>
+                <div class="vip-btn">立即开通</div>
+              </div>
+            </i>
+            <i class="iconfont icon-upload upload">
+              <span>创作</span>
+            </i>
+            <i class="iconfont icon-message message">
+              <div class="popover">
+                <div class="msg-top">
+                  <div class="remark">评论/回复</div>
+                  <div class="up">点赞</div>
+                </div>
+                <div class="content">没有收到任何消息</div>
+                <div class="btn">查看全部</div>
+              </div>
+            </i>
+            <i class="iconfont icon-time time">
+              <div class="popover">
+                <img src="./img/movie.png" alt="" class="tmovie" />
+                <div class="des">您还没有观看任何视频</div>
+              </div>
+            </i>
+            <i class="iconfont icon-tv tv">
+              <span>送VIP</span>
+              <div class="popover">
+                <div class="tv-item">
+                  <img src="./img/tv_vip.png" alt="" />
+                  <div class="tv-des">VIP免费送先到先得</div>
+                </div>
+                <div class="tv-item">
+                  <img src="./img/tv_ad.png" alt="" />
+                  <div class="tv-des">免广告超爽体验</div>
+                </div>
+                <div class="tv-item">
+                  <img src="./img/tv_hd.png" alt="" />
+                  <div class="tv-des">1080P蓝光畅享</div>
+                </div>
+                <div class="tv-item">
+                  <img src="./img/tv_speed.png" alt="" />
+                  <div class="tv-des">三倍流畅不卡顿</div>
+                </div>
+                <div class="tv-btn">立即体验</div>
+              </div>
+            </i>
+            <img src="./img/头像.jpg" class="avator" />
+          </div>
         </div>
-        <div class="banner"></div>
+      </div>
+      <div class="right_list">
+        <ul>
+          <li class="line_1">
+            爱的修行旅行
+            <p class="p_1">合球菌曾表白奚梦瑶被拒</p>
+          </li>
+          <li class="line_2" data-bg="1.webp">
+            神影
+            <p class="p_2">命定情缘 赵露思王安宇神</p>
+          </li>
+          <li class="line_3">
+            生生不息，嘉年华
+            <p class="p_3">周深《桃花若》仅显国风之美</p>
+          </li>
+          <li class="line_4">
+            你好，星期六
+            <p class="p_4">刘诗诗脸颊比心</p>
+          </li>
+          <li class="line_5">
+            问苍茫
+            <p class="p_5">重现伟人革命历程</p>
+          </li>
+          <li class="line_6">
+            感动“20周年“音乐盛典
+            <p class="p_6">与少年时代团一起共赴青春制约</p>
+          </li>
+          <li class="line_7">
+            名侦探学院7
+            <p class="p_7">合球菌曾表白奚梦瑶被拒</p>
+          </li>
+          <li class="line_8">
+            花儿与少年
+            <p class="p_8">合球菌曾表白奚梦瑶被拒</p>
+          </li>
+          <li class="line_9">
+            非凡医者 大结局
+            <p class="p_9">合球菌曾表白奚梦瑶被拒</p>
+          </li>
+          <li class="line_10">
+            对你不只喜欢
+            <p class="p_10">恋爱教学</p>
+          </li>
+          <li class="line_11">
+            祈福甘肃
+            <p class="p_11">愿平安</p>
+          </li>
+        </ul>
+      </div>
+      <div class="banner"></div>
     </div>
     <div class="button_nav">
-        <div><img src="./img/综艺.png" alt="">综艺</div>
-        <div><img src="./img/电视剧.png" alt="">电视剧</div>
-        <div><img src="./img/电影.png" alt="">电影</div>
-        <div><img src="./img/少儿.png" alt="">少儿</div>
-        <div><img src="./img/动漫.png" alt="">动漫</div>
-        <div><img src="./img/会员.png" alt="">VIP会员</div>
-        <ul>
-            <li>新闻</li>
-            <li>纪录片</li>
-            <li>芒果公益</li>
-            <li>音乐</li>
-            <li>直播</li>
-            <li>更多...</li>
-        </ul>
+      <div><img src="./img/综艺.png" alt="" />综艺</div>
+      <div><img src="./img/电视剧.png" alt="" />电视剧</div>
+      <div><img src="./img/电影.png" alt="" />电影</div>
+      <div><img src="./img/少儿.png" alt="" />少儿</div>
+      <div><img src="./img/动漫.png" alt="" />动漫</div>
+      <div><img src="./img/会员.png" alt="" />VIP会员</div>
+      <ul>
+        <li>新闻</li>
+        <li>纪录片</li>
+        <li>芒果公益</li>
+        <li>音乐</li>
+        <li>直播</li>
+        <li>更多...</li>
+      </ul>
     </div>
-    <!-- 热播 -->
-    <div class="hot_video">
-        <div class="hot_head">
-            <h2>
-                当季热播
-                <div class="arrow">
-                    <i class="iconfont icon-a-arrowright"></i>
-                </div>
-            </h2>
-        </div>
-        <div class="content">
-            <div class="hover_item">
-                <div class="img-wrapper">
-                    <img src="./img/content/1.webp" alt="">
-                </div>
-                <h4>下一站是幸福</h4>
-                <p>全世界最好的贺繁星元宋</p>
-            </div>
-            <div class="hover_item">
-                <div class="img-wrapper">
-                    <img src="./img/content/2.webp" alt="">
-                </div>
-                <h4>湖南卫视芒果TV跨年晚会</h4>
-                <p>12月31日19:30 一起热烈向前</p>
-            </div>
-            <div class="hover_item">
-                <div class="img-wrapper">
-                    <img src="./img/content/3.webp" alt="">
-                </div>
-                <h4>声生不息·家年华·加更版</h4>
-                <p>汪苏泷周深演我汇报工作</p>
-            </div>
-            <div class="hover_item">
-                <div class="img-wrapper">
-                    <img src="./img/content/4.jpg" alt="">
-                </div>
-                <h4>来者何人</h4>
-                <p>郝蕾不满新生表现现场发飙？</p>
-            </div>
-            <div class="hover_item">
-                <div class="img-wrapper">
-                    <img src="./img/content/5.webp" alt="">
-                </div>
-                <h4>乘风2023·限时免费看！</h4>
-                <p>Ella大放青春回忆杀！</p>
-            </div>
-            <div class="hover_item">
-                <div class="img-wrapper">
-                    <img src="./img/content/6.webp" alt="">
-                </div>
-                <h4>快乐老友记 加更版</h4>
-                <p>陆虎独家焖面获厚米团一致好评</p>
-            </div>
-        </div>
-    </div>
-    <!-- 王牌节目 -->
-    <div class="king_content">
-        <h2>
-            王牌节目
-            <div class="arrow">
-                <i class="iconfont icon-a-arrowright"></i>
-            </div>
-        </h2>
-        <div class="king_box">
-            <div class="box1 hover_item">
-                <div class="big-wrapper">
-                    <img src="./img/king/大图.jpg" alt="">
-                </div>
-                <h2>我是大美人</h2>
-                <p>带你变美！美好见习生首亮相</p>
-            </div>
-            <div class="box2">
-                <div class="hover_item">
-                    <div class="img-wrapper">
-                        <img src="./img/king/1.webp" alt="">
-                    </div>
-                    <h4>我是大美人</h4>
-                    <p>刘诗诗脸颊比心好甜</p>
-                </div>
-                <div class="hover_item">
-                    <div class="img-wrapper">
-                        <img src="./img/king/2.webp" alt="">
-                    </div>
-                    <h4>声生不息·家年华</h4>
-                    <p>孙楠陈楚生歌声直击人心</p>
-                </div>
-                <div class="hover_item">
-                    <div class="img-wrapper">
-                        <img src="./img/king/3.webp" alt="">
-                    </div>
-                    <h4>名侦探学院7</h4>
-                    <p>刘诗诗脸颊比心好甜</p>
-                </div>
-                <div class="hover_item">
-                    <div class="img-wrapper">
-                        <img src="./img/king/4.jpg" alt="">
-                    </div>
-                    <h4>哎呀好身材·奔赴季</h4>
-                    <p>刘诗诗脸颊比心好甜</p>
-                </div>
-                <div class="hover_item">
-                    <div class="img-wrapper">
-                        <img src="./img/king/5.webp" alt="">
-                    </div>
-                    <h4>你好，星期六</h4>
-                    <p>刘诗诗脸颊比心好甜</p>
-                </div>
-                <div class="hover_item">
-                    <div class="img-wrapper">
-                        <img src="./img/king/6.webp" alt="">
-                    </div>
-                    <h4>动感“20周年”音乐盛典</h4>
-                    <p>动感“20周年”音乐盛典全程回顾</p>
-                </div>
-                <div class="hover_item">
-                    <div class="img-wrapper">
-                        <img src="./img/king/7.jpg" alt="">
-                    </div>
-                    <h4>可以给你做顿饭吗2</h4>
-                    <p>刘仪伟暖心开导谢兴阳</p>
-                </div>
-                <div class="hover_item">
-                    <div class="img-wrapper">
-                        <img src="./img/king/8.webp" alt="">
-                    </div>
-                    <h4>湘行漫记</h4>
-                    <p>听听《月亮之上》的创作故事</p>
-                </div>
-            </div>
-        </div>
 
-    </div>
-    <!-- 电影 -->
-    <div class="movie">
-        <div class="movie_head">
-            <h2>
-                电影
-                <div class="arrow">
-                    <i class="iconfont icon-a-arrowright"></i>
-                </div>
-            </h2>
-        </div>
-        <div class="movie_content firs-movie">
-            <div class="movie-wrapper">
-                <img src="./img/电影/1.webp" alt="">
-            </div>
-            <h4>坚如磐石</h4>
-            <p>张艺谋扫黑悬疑巨作</p>
-        </div>
-        <div class="movie_content">
-            <div class="movie-wrapper">
-                <img src="./img/电影/2.webp" alt="">
-            </div>
-            <h4>好像也没那么热血沸腾</h4>
-            <p>魏翔艾伦赛场披荆斩棘</p>
-        </div>
-        <div class="movie_content">
-            <div class="movie-wrapper">
-                <img src="./img/电影/3.webp" alt="">
-            </div>
-            <h4>前任4：英年早婚</h4>
-            <p>韩庚郑恺遇爱情新挑战</p>
-        </div>
-        <div class="movie_content">
-            <div class="movie-wrapper">
-                <img src="./img/电影/4.webp" alt="">
-            </div>
-            <h4>河边的错误</h4>
-            <p>朱一龙颠覆表达荒诞现实</p>
-        </div>
-        <div class="movie_content">
-            <div class="movie-wrapper">
-                <img src="./img/电影/5.webp" alt="">
-            </div>
-            <h4>GT赛车：极速狂飙</h4>
-            <p>少年追梦改写赛车史</p>
-        </div>
-        <div class="movie_content">
-            <div class="movie-wrapper">
-                <img src="./img/电影/6.webp" alt="">
-            </div>
-            <h4>莫斯科行动</h4>
-            <p>张涵予刘德华黄轩高能较量</p>
-        </div>
-    </div>
+    <!-- ********************** 当季热播 start **************************-->
     <div class="hot_video">
-        <div class="hot_head see">
-            <h2>
-                看了还会看
-                <div class="arrow">
-                    <i class="iconfont icon-a-arrowright"></i>
-                </div>
-            </h2>
-        </div>
-        <div class="content">
-            <div class="hover_item">
-                <div class="img-wrapper">
-                    <img src="./img/content/1.webp" alt="">
-                </div>
-                <h4>下一站是幸福</h4>
-                <p>全世界最好的贺繁星元宋</p>
-            </div>
-            <div class="hover_item">
-                <div class="img-wrapper">
-                    <img src="./img/content/2.webp" alt="">
-                </div>
-                <h4>湖南卫视芒果TV跨年晚会</h4>
-                <p>12月31日19:30 一起热烈向前</p>
-            </div>
-            <div class="hover_item">
-                <div class="img-wrapper">
-                    <img src="./img/content/3.webp" alt="">
-                </div>
-                <h4>声生不息·家年华·加更版</h4>
-                <p>汪苏泷周深演我汇报工作</p>
-            </div>
-            <div class="hover_item">
-                <div class="img-wrapper">
-                    <img src="./img/content/4.jpg" alt="">
-                </div>
-                <h4>来者何人</h4>
-                <p>郝蕾不满新生表现现场发飙？</p>
-            </div>
-            <div class="hover_item">
-                <div class="img-wrapper">
-                    <img src="./img/content/5.webp" alt="">
-                </div>
-                <h4>乘风2023·限时免费看！</h4>
-                <p>Ella大放青春回忆杀！</p>
-            </div>
-            <div class="hover_item">
-                <div class="img-wrapper">
-                    <img src="./img/content/6.webp" alt="">
-                </div>
-                <h4>快乐老友记 加更版</h4>
-                <p>陆虎独家焖面获厚米团一致好评</p>
-            </div>
-        </div>
-    </div>
-    <!-- 即将上线 -->
-    <div class="willcome">
+      <div class="hot_head">
         <h2>
-            即将上线
-            <div class="arrow">
-                <i class="iconfont icon-a-arrowright"></i>
-            </div>
+          当季热播
+          <div class="arrow">
+            <i class="iconfont icon-a-arrowright"></i>
+          </div>
         </h2>
-        <div class="top-line">
-            <div class="line-item frist-line">
-                明天 10:00
-                <i class="iconfont icon-Play-fill"></i>
-            </div>
-            <div class="line-item">
-                敬请期待
-                <div class="dot"></div>
-            </div>
-            <div class="line-item">
-                敬请期待
-                <div class="dot"></div>
-            </div>
-            <div class="line-item">
-                敬请期待
-                <div class="dot"></div>
-            </div>
-            <div class="line-item">
-                敬请期待
-                <div class="dot"></div>
-            </div>
-            <div class="line-item">
-                敬请期待
-                <div class="dot"></div>
-            </div>
+      </div>
+      <div class="content">
+        <div class="hover_item">
+          <div class="img-wrapper">
+            <img src="./img/content/1.webp" alt="" />
+          </div>
+          <h4>下一站是幸福</h4>
+          <p>全世界最好的贺繁星元宋</p>
         </div>
-        <div class="content">
-            <div class="will_content">
-                <img src="./img/电影/1.webp" alt="">
-                <h4>坚如磐石</h4>
-                <p>张艺谋扫黑悬疑巨作</p>
-                <div class="btn">
-                    <span>预约</span>
-                </div>
-                <div class="details-wrapper">
-                    <div class="details-top"></div>
-                    <div class="details-bottom">
-                        <div class="title">坚如磐石</div>
-                        <div class="des">简介：在即将坠入深渊的危急关头，辛灵被“神秘人”救出，意外来到了荒石被封印的地方。而荒石却在战斗中身受重伤，元神消散。为了救回荒石，叶罗丽战士们也行动起来，前往奇幻的仙境，开启全新的冒险之旅。在拯救荒石的过程中，辛灵带领孩子一起怀揣勇气与希望，再度探寻爱与成长的真谛。</div>
-                        <div class="btn">
-                            <span>立即预约</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="will_content">
-                <img src="./img/电影/2.webp" alt="">
-                <h4>好像也没那么热血沸腾</h4>
-                <p>魏翔艾伦赛场披荆斩棘</p>
-                <div class="btn">
-                    <span>预约</span>
-                </div>
-                <div class="details-wrapper1">
-                    <div class="details-top"></div>
-                    <div class="details-bottom">
-                        <div class="title">好像也没那么热血沸腾</div>
-                        <div class="des">简介：在即将坠入深渊的危急关头，辛灵被“神秘人”救出，意外来到了荒石被封印的地方。而荒石却在战斗中身受重伤，元神消散。为了救回荒石，叶罗丽战士们也行动起来，前往奇幻的仙境，开启全新的冒险之旅。在拯救荒石的过程中，辛灵带领孩子一起怀揣勇气与希望，再度探寻爱与成长的真谛。</div>
-                        <div class="btn">
-                            <span>立即预约</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="will_content">
-                <img src="./img/电影/3.webp" alt="">
-                <h4>前任4：英年早婚</h4>
-                <p>韩庚郑恺遇爱情新挑战</p>
-                <div class="btn">
-                    <span>预约</span>
-                </div>
-                <div class="details-wrapper2">
-                    <div class="details-top"></div>
-                    <div class="details-bottom">
-                        <div class="title">前任4：英年早婚</div>
-                        <div class="des">简介：在即将坠入深渊的危急关头，辛灵被“神秘人”救出，意外来到了荒石被封印的地方。而荒石却在战斗中身受重伤，元神消散。为了救回荒石，叶罗丽战士们也行动起来，前往奇幻的仙境，开启全新的冒险之旅。在拯救荒石的过程中，辛灵带领孩子一起怀揣勇气与希望，再度探寻爱与成长的真谛。</div>
-                        <div class="btn">
-                            <span>立即预约</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="will_content">
-                <img src="./img/电影/4.webp" alt="">
-                <h4>河边的错误</h4>
-                <p>朱一龙颠覆表达荒诞现实</p>
-                <div class="btn">
-                    <span>预约</span>
-                </div>
-                <div class="details-wrapper3">
-                    <div class="details-top"></div>
-                    <div class="details-bottom">
-                        <div class="title">河边的错误</div>
-                        <div class="des">简介：在即将坠入深渊的危急关头，辛灵被“神秘人”救出，意外来到了荒石被封印的地方。而荒石却在战斗中身受重伤，元神消散。为了救回荒石，叶罗丽战士们也行动起来，前往奇幻的仙境，开启全新的冒险之旅。在拯救荒石的过程中，辛灵带领孩子一起怀揣勇气与希望，再度探寻爱与成长的真谛。</div>
-                        <div class="btn">
-                            <span>立即预约</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="will_content">
-                <img src="./img/电影/5.webp" alt="">
-                <h4>GT赛车：极速狂飙</h4>
-                <p>少年追梦改写赛车史</p>
-                <div class="btn">
-                    <span>预约</span>
-                </div>
-                <div class="details-wrapper4">
-                    <div class="details-top"></div>
-                    <div class="details-bottom">
-                        <div class="title">GT赛车：极速狂飙</div>
-                        <div class="des">简介：在即将坠入深渊的危急关头，辛灵被“神秘人”救出，意外来到了荒石被封印的地方。而荒石却在战斗中身受重伤，元神消散。为了救回荒石，叶罗丽战士们也行动起来，前往奇幻的仙境，开启全新的冒险之旅。在拯救荒石的过程中，辛灵带领孩子一起怀揣勇气与希望，再度探寻爱与成长的真谛。</div>
-                        <div class="btn">
-                            <span>立即预约</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="will_content">
-                <img src="./img/电影/6.webp" alt="">
-                <h4>莫斯科行动</h4>
-                <p>张涵予刘德华黄轩高能较量</p>
-                <div class="btn">
-                    <span>预约</span>
-                </div>
-                <div class="details-wrapper5">
-                    <div class="details-top"></div>
-                    <div class="details-bottom">
-                        <div class="title">莫斯科行动</div>
-                        <div class="des">简介：在即将坠入深渊的危急关头，辛灵被“神秘人”救出，意外来到了荒石被封印的地方。而荒石却在战斗中身受重伤，元神消散。为了救回荒石，叶罗丽战士们也行动起来，前往奇幻的仙境，开启全新的冒险之旅。在拯救荒石的过程中，辛灵带领孩子一起怀揣勇气与希望，再度探寻爱与成长的真谛。</div>
-                        <div class="btn">
-                            <span>立即预约</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="hover_item">
+          <div class="img-wrapper">
+            <img src="./img/content/2.webp" alt="" />
+          </div>
+          <h4>湖南卫视芒果TV跨年晚会</h4>
+          <p>12月31日19:30 一起热烈向前</p>
         </div>
-        <div class="willfooter">
-            <div class="footer-item">
-                <img src="./img/banner1.png" alt="">
-            </div>
-            <div class="footer-item">
-                <img src="./img/banner2.png" alt="">
-            </div>
-            <div class="footer-item">
-                <img src="./img/banner3.jpg" alt="">
-                <div class="arrow">
-                    <i class="iconfont icon-a-arrowright"></i>
-                </div>
-            </div>
+        <div class="hover_item">
+          <div class="img-wrapper">
+            <img src="./img/content/3.webp" alt="" />
+          </div>
+          <h4>声生不息·家年华·加更版</h4>
+          <p>汪苏泷周深演我汇报工作</p>
         </div>
+        <div class="hover_item">
+          <div class="img-wrapper">
+            <img src="./img/content/4.jpg" alt="" />
+          </div>
+          <h4>来者何人</h4>
+          <p>郝蕾不满新生表现现场发飙？</p>
+        </div>
+        <div class="hover_item">
+          <div class="img-wrapper">
+            <img src="./img/content/5.webp" alt="" />
+          </div>
+          <h4>乘风2023·限时免费看！</h4>
+          <p>Ella大放青春回忆杀！</p>
+        </div>
+        <div class="hover_item">
+          <div class="img-wrapper">
+            <img src="./img/content/6.webp" alt="" />
+          </div>
+          <h4>快乐老友记 加更版</h4>
+          <p>陆虎独家焖面获厚米团一致好评</p>
+        </div>
+      </div>
+      strat
     </div>
-    <!-- 美食 -->
+    <!-- ********************** 当季热播 end **************************-->
+
+    <!-- ********************** 王牌节目 start **************************-->
+    <div class="king_content">
+      <h2>
+        王牌节目
+        <div class="arrow">
+          <i class="iconfont icon-a-arrowright"></i>
+        </div>
+      </h2>
+      <div class="king_box">
+        <div class="box1 hover_item">
+          <div class="big-wrapper">
+            <img src="./img/king/大图.jpg" alt="" />
+          </div>
+          <h2>我是大美人</h2>
+          <p>带你变美！美好见习生首亮相</p>
+        </div>
+        <div class="box2">
+          <div class="hover_item">
+            <div class="img-wrapper">
+              <img src="./img/king/1.webp" alt="" />
+            </div>
+            <h4>我是大美人</h4>
+            <p>刘诗诗脸颊比心好甜</p>
+          </div>
+          <div class="hover_item">
+            <div class="img-wrapper">
+              <img src="./img/king/2.webp" alt="" />
+            </div>
+            <h4>声生不息·家年华</h4>
+            <p>孙楠陈楚生歌声直击人心</p>
+          </div>
+          <div class="hover_item">
+            <div class="img-wrapper">
+              <img src="./img/king/3.webp" alt="" />
+            </div>
+            <h4>名侦探学院7</h4>
+            <p>刘诗诗脸颊比心好甜</p>
+          </div>
+          <div class="hover_item">
+            <div class="img-wrapper">
+              <img src="./img/king/4.jpg" alt="" />
+            </div>
+            <h4>哎呀好身材·奔赴季</h4>
+            <p>刘诗诗脸颊比心好甜</p>
+          </div>
+          <div class="hover_item">
+            <div class="img-wrapper">
+              <img src="./img/king/5.webp" alt="" />
+            </div>
+            <h4>你好，星期六</h4>
+            <p>刘诗诗脸颊比心好甜</p>
+          </div>
+          <div class="hover_item">
+            <div class="img-wrapper">
+              <img src="./img/king/6.webp" alt="" />
+            </div>
+            <h4>动感“20周年”音乐盛典</h4>
+            <p>动感“20周年”音乐盛典全程回顾</p>
+          </div>
+          <div class="hover_item">
+            <div class="img-wrapper">
+              <img src="./img/king/7.jpg" alt="" />
+            </div>
+            <h4>可以给你做顿饭吗2</h4>
+            <p>刘仪伟暖心开导谢兴阳</p>
+          </div>
+          <div class="hover_item">
+            <div class="img-wrapper">
+              <img src="./img/king/8.webp" alt="" />
+            </div>
+            <h4>湘行漫记</h4>
+            <p>听听《月亮之上》的创作故事</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ********************** 王牌节目 end **************************-->
+
+    <!-- ********************** 逐梦新征程 奋斗创未来 start **************************-->
+    <div class="hot_video">
+      <div class="hot_head">
+        <h2>
+          逐梦新征程 奋斗创未来
+          <div class="arrow">
+            <i class="iconfont icon-a-arrowright"></i>
+          </div>
+        </h2>
+      </div>
+      <div class="content">
+        <div class="hover_item">
+          <div class="img-wrapper">
+            <img src="./img/content/11.webp" alt="" />
+          </div>
+          <h4>学习贯彻党的二十届三中全会精神</h4>
+        </div>
+        <div class="hover_item">
+          <div class="img-wrapper">
+            <img src="./img/content/12.webp" alt="" />
+          </div>
+          <h4>牢记嘱托 改革创新 求i真务实奋力谱写中国式现代化湖南篇章</h4>
+        </div>
+        <div class="hover_item">
+          <div class="img-wrapper">
+            <img src="./img/content/13.webp" alt="" />
+          </div>
+          <h4>中华人民共和国第一届青少年三大球运动会</h4>
+        </div>
+        <div class="hover_item">
+          <div class="img-wrapper">
+            <img src="./img/content/14.webp" alt="" />
+          </div>
+          <h4>来湘创业吧！大学生朋友！</h4>
+        </div>
+        <div class="hover_item">
+          <div class="img-wrapper">
+            <img src="./img/content/15.webp" alt="" />
+          </div>
+          <h4>重温经典·共贺祖国华诞</h4>
+        </div>
+        <div class="hover_item">
+          <div class="img-wrapper">
+            <img src="./img/content/16.webp" alt="" />
+          </div>
+          <h4>党旗在基层一线高高飘扬</h4>
+        </div>
+      </div>
+    </div>
+    <!-- ********************** 逐梦新征程 奋斗创未来 end **************************-->
+
+    <!-- ********************** 热播剧集 start **************************-->
+    <div class="king_content">
+      <h2>
+        热播剧集
+        <div class="arrow">
+          <i class="iconfont icon-a-arrowright"></i>
+        </div>
+      </h2>
+      <div class="king_box">
+        <div class="box1 hover_item">
+          <div class="big-wrapper">
+            <img src="./img/king/大图2.png" alt="" />
+          </div>
+          <h2>小巷人家</h2>
+          <p>小巷青年开启沪上生活</p>
+        </div>
+        <div class="box2">
+          <div class="hover_item">
+            <div class="img-wrapper">
+              <img src="./img/king/9.webp.png" alt="" />
+            </div>
+            <h4>锦绣安宁</h4>
+            <p>高爽！张晚意任敏逆袭复仇</p>
+          </div>
+          <div class="hover_item">
+            <div class="img-wrapper">
+              <img src="./img/king/10.webp.png" alt="" />
+            </div>
+            <h4>风华鉴</h4>
+            <p>将门贵女执念三年换君归？</p>
+          </div>
+          <div class="hover_item">
+            <div class="img-wrapper">
+              <img src="./img/king/11.webp.png" alt="" />
+            </div>
+            <h4>赎爱</h4>
+            <p>高能！复仇千金华丽归来</p>
+          </div>
+          <div class="hover_item">
+            <div class="img-wrapper">
+              <img src="./img/king/12.webp.png" alt="" />
+            </div>
+            <h4>私藏浪漫</h4>
+            <p>超甜 张佳宁魏哲鸣刺激地下恋</p>
+          </div>
+          <div class="hover_item">
+            <div class="img-wrapper">
+              <img src="./img/king/13.webp.png" alt="" />
+            </div>
+            <h4>长乐曲</h4>
+            <p>爆甜！丁禹兮邓恩熙替嫁成婚</p>
+          </div>
+          <div class="hover_item">
+            <div class="img-wrapper">
+              <img src="./img/king/14.webp.png" alt="" />
+            </div>
+            <h4>日光之城</h4>
+            <p>周游杨秀措拉萨创业追梦</p>
+          </div>
+          <div class="hover_item">
+            <div class="img-wrapper">
+              <img src="./img/king/15.webp.png" alt="" />
+            </div>
+            <h4>一梦如故</h4>
+            <p>"烈郎怕缠女"晓萌发现一线生机</p>
+          </div>
+          <div class="hover_item">
+            <div class="img-wrapper">
+              <img src="./img/king/16.webp" alt="" />
+            </div>
+            <h4>装腔启示录·限免</h4>
+            <p>高口碑！蔡文静韩东君暧昧拉扯</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ********************** 热播剧集 end **************************-->
+
+    <!-- ********************** 下饭爽剧 2小时速看全集 start **************************-->
+    <div class="hot_video">
+      <div class="hot_head">
+        <h2>
+          下饭爽剧 2小时速看全集
+          <div class="arrow">
+            <i class="iconfont icon-a-arrowright"></i>
+          </div>
+        </h2>
+      </div>
+      <div class="content">
+        <div class="hover_item">
+          <div class="img-wrapper">
+            <img src="./img/content/18.webp.jpg" alt="" />
+          </div>
+          <h4>明知故爱</h4>
+          <p>理性冰美人"训夫"傲娇纯爱霸总</p>
+        </div>
+        <div class="hover_item">
+          <div class="img-wrapper">
+            <img src="./img/content/19.webp.jpg" alt="" />
+          </div>
+          <h4>有种味道叫清溪</h4>
+          <p>爱在清溪，烟火人间</p>
+        </div>
+        <div class="hover_item">
+          <div class="img-wrapper">
+            <img src="./img/content/20.webp.png" alt="" />
+          </div>
+          <h4>折眉</h4>
+          <p>乱世佳人招惹冷面将军</p>
+        </div>
+        <div class="hover_item">
+          <div class="img-wrapper">
+            <img src="./img/content/21.webp.png" alt="" />
+          </div>
+          <h4>凤落江湖</h4>
+          <p>甜撩反转!双向试探以情诱杀</p>
+        </div>
+        <div class="hover_item">
+          <div class="img-wrapper">
+            <img src="./img/content/22.webp.png" alt="" />
+          </div>
+          <h4>公主请回家</h4>
+          <p>热血将军接熊猫公主回家</p>
+        </div>
+        <div class="hover_item">
+          <div class="img-wrapper">
+            <img src="./img/content/23.webp.png" alt="" />
+          </div>
+          <h4>独角兽猎人</h4>
+          <p>双向奔赴！看职场菜鸟步步升职</p>
+        </div>
+      </div>
+    </div>
+    <!-- ********************** 下饭爽剧 2小时速看全集 end **************************-->
+
+    <!-- ********************** 少儿 start **************************-->
+    <div class="king_content">
+      <h2>
+        少儿
+        <div class="arrow">
+          <i class="iconfont icon-a-arrowright"></i>
+        </div>
+      </h2>
+      <div class="king_box">
+        <div class="box1 hover_item">
+          <div class="big-wrapper">
+            <img src="./img/king/大图3.webp" alt="" />
+          </div>
+          <h2>汪汪队立大功 第十季</h2>
+          <p>猎豹喵喵大队开启全新救援</p>
+        </div>
+        <div class="box2">
+          <div class="hover_item">
+            <div class="img-wrapper">
+              <img src="./img/king/17.webp.jpg" alt="" />
+            </div>
+            <h4>超级飞侠17 史前大救援</h4>
+            <p>恐龙飞侠，史前救援出动</p>
+          </div>
+          <div class="hover_item">
+            <div class="img-wrapper">
+              <img src="./img/king/18.webp.jpg" alt="" />
+            </div>
+            <h4>巴啦啦小魔仙之曜星守护者1</h4>
+            <p>幻彩星辉，闪耀守护</p>
+          </div>
+          <div class="hover_item">
+            <div class="img-wrapper">
+              <img src="./img/king/19.webp.jpg" alt="" />
+            </div>
+            <h4>熊出没·逆转时空</h4>
+            <p>穿越时空重启熊强宇宙</p>
+          </div>
+          <div class="hover_item">
+            <div class="img-wrapper">
+              <img src="./img/king/20.webp.jpg" alt="" />
+            </div>
+            <h4>勇敢的格斯 第二季</h4>
+            <p>一"骑"去冒险</p>
+          </div>
+          <div class="hover_item">
+            <div class="img-wrapper">
+              <img src="./img/king/21.webp.jpg" alt="" />
+            </div>
+            <h4>航海少年团</h4>
+            <p>用想象力启航</p>
+          </div>
+          <div class="hover_item">
+            <div class="img-wrapper">
+              <img src="./img/king/22.webp.jpg" alt="" />
+            </div>
+            <h4>森林四小宝</h4>
+            <p>森林小英雄的社交启蒙日记</p>
+          </div>
+          <div class="hover_item">
+            <div class="img-wrapper">
+              <img src="./img/king/23.webp.jpg" alt="" />
+            </div>
+            <h4>闪耀月亮女王</h4>
+            <p>星光闪耀 梦想启航</p>
+          </div>
+          <div class="hover_item">
+            <div class="img-wrapper">
+              <img src="./img/king/24.webp.jpg" alt="" />
+            </div>
+            <h4>蘑菇精灵大冒险第二季（下）</h4>
+            <p>森林探险小队萌趣回归</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ********************** 少儿 end **************************-->
+    
+    <!-- ********************** 电影 end **************************-->
+    <div class="movie">
+      <div class="movie_head">
+        <h2>
+          电影
+          <div class="arrow">
+            <i class="iconfont icon-a-arrowright"></i>
+          </div>
+        </h2>
+      </div>
+      <div class="movie_content firs-movie">
+        <div class="movie-wrapper">
+          <img src="./img/电影/1.webp" alt="" />
+        </div>
+        <h4>坚如磐石</h4>
+        <p>张艺谋扫黑悬疑巨作</p>
+      </div>
+      <div class="movie_content">
+        <div class="movie-wrapper">
+          <img src="./img/电影/2.webp" alt="" />
+        </div>
+        <h4>好像也没那么热血沸腾</h4>
+        <p>魏翔艾伦赛场披荆斩棘</p>
+      </div>
+      <div class="movie_content">
+        <div class="movie-wrapper">
+          <img src="./img/电影/3.webp" alt="" />
+        </div>
+        <h4>前任4：英年早婚</h4>
+        <p>韩庚郑恺遇爱情新挑战</p>
+      </div>
+      <div class="movie_content">
+        <div class="movie-wrapper">
+          <img src="./img/电影/4.webp" alt="" />
+        </div>
+        <h4>河边的错误</h4>
+        <p>朱一龙颠覆表达荒诞现实</p>
+      </div>
+      <div class="movie_content">
+        <div class="movie-wrapper">
+          <img src="./img/电影/5.webp" alt="" />
+        </div>
+        <h4>GT赛车：极速狂飙</h4>
+        <p>少年追梦改写赛车史</p>
+      </div>
+      <div class="movie_content">
+        <div class="movie-wrapper">
+          <img src="./img/电影/6.webp" alt="" />
+        </div>
+        <h4>莫斯科行动</h4>
+        <p>张涵予刘德华黄轩高能较量</p>
+      </div>
+    </div>
+    <div class="king_content">
+      <h2>
+        影评解读·电影速看
+        <div class="arrow">
+          <i class="iconfont icon-a-arrowright"></i>
+        </div>
+      </h2>
+      <div class="king_box">
+        <div class="box1 hover_item">
+          <div class="big-wrapper">
+            <img src="./img/king/大图4.webp" alt="" />
+          </div>
+          <h2>《第二十条》背后的公平正义</h2>
+          <p>赵丽颖正当防卫雷佳音诠是大爱</p>
+        </div>
+        <div class="box2">
+          <div class="hover_item">
+            <div class="img-wrapper">
+              <img src="./img/king/25.webp.webp" alt="" />
+            </div>
+            <h4>励志电影《银河补习班》</h4>
+            <p>差生的逆袭</p>
+          </div>
+          <div class="hover_item">
+            <div class="img-wrapper">
+              <img src="./img/king/26.webp.webp" alt="" />
+            </div>
+            <h4>《飞驰人生2》你没看懂的细节</h4>
+            <p>车窗上的字母和符号是什么意思</p>
+          </div>
+          <div class="hover_item">
+            <div class="img-wrapper">
+              <img src="./img/king/27.webp.webp" alt="" />
+            </div>
+            <h4>《一个人的武林》中的高手</h4>
+            <p>封于修真的没人能打过他吗？</p>
+          </div>
+          <div class="hover_item">
+            <div class="img-wrapper">
+              <img src="./img/king/28.webp.webp" alt="" />
+            </div>
+            <h4>盘点DC四个版本的闪电侠</h4>
+            <p>各有特点，你喜欢哪一版的？</p>
+          </div>
+          <div class="hover_item">
+            <div class="img-wrapper">
+              <img src="./img/king/29.webp.webp" alt="" />
+            </div>
+            <h4>《第二十条》观众未认出赵丽颖</h4>
+          </div>
+          <div class="hover_item">
+            <div class="img-wrapper">
+              <img src="./img/king/30.webp.webp" alt="" />
+            </div>
+            <h4>2023年度电影盘点</h4>
+            <p>今年必看！年度高分电影</p>
+          </div>
+          <div class="hover_item">
+            <div class="img-wrapper">
+              <img src="./img/king/31.webp.webp" alt="" />
+            </div>
+            <h4>贾玲的腹肌，让谁的脸热辣滚烫</h4>
+          </div>
+          <div class="hover_item">
+            <div class="img-wrapper">
+              <img src="./img/king/32.webp" alt="" />
+            </div>
+            <h4>《灿烂的她》超会演</h4>
+            <p>奶奶和斯然是彼此的礼物</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ********************** 电影 end **************************-->
+    
+    <!-- ********************** 动漫 end **************************-->
+    <div class="movie">
+      <div class="movie_head">
+        <h2>
+          动漫
+          <div class="arrow">
+            <i class="iconfont icon-a-arrowright"></i>
+          </div>
+        </h2>
+      </div>
+      <div class="movie_content firs-movie">
+        <div class="movie-wrapper">
+          <img src="./img/电影/7.webp" alt="" />
+        </div>
+        <h4>夏目有人帐 第七季</h4>
+        <p>少年和喵咪老师的治愈之旅</p>
+      </div>
+      <div class="movie_content">
+        <div class="movie-wrapper">
+          <img src="./img/电影/8.webp.png" alt="" />
+        </div>
+        <h4>叶罗丽梦奇境</h4>
+        <p>突破次元的梦境奇遇</p>
+      </div>
+      <div class="movie_content">
+        <div class="movie-wrapper">
+          <img src="./img/电影/9.webp.png" alt="" />
+        </div>
+        <h4>漫画奇侠</h4>
+        <p>召唤专属你的漫画英雄</p>
+      </div>
+      <div class="movie_content">
+        <div class="movie-wrapper">
+          <img src="./img/电影/10.webp.png" alt="" />
+        </div>
+        <h4>哑舍</h4>
+        <p>倾听哑舍里鼓古物承载的故事</p>
+      </div>
+      <div class="movie_content">
+        <div class="movie-wrapper">
+          <img src="./img/电影/11.webp.png" alt="" />
+        </div>
+        <h4>奇迹少女</h4>
+        <p>唤醒心中的勇气</p>
+      </div>
+      <div class="movie_content">
+        <div class="movie-wrapper">
+          <img src="./img/电影/12.webp.png" alt="" />
+        </div>
+        <h4>蜡笔小新 第八季</h4>
+        <p>小新萌力全开</p>
+      </div>
+    </div>
+    <!-- ********************** 动漫 end **************************-->
+    
+    <!-- ********************** 原创精选 start **************************-->
+    <div class="hot_video">
+      <div class="hot_head">
+        <h2>
+          原创精选
+          <div class="arrow">
+            <i class="iconfont icon-a-arrowright"></i>
+          </div>
+        </h2>
+      </div>
+      <div class="content">
+        <div class="hover_item">
+          <div class="img-wrapper">
+            <img src="./img/content/24.webp.jpg" alt="" />
+          </div>
+          <h4>张若昀个人向混剪</h4>
+          <p>他可是高贵优雅的张姆斯啊！</p>
+        </div>
+        <div class="hover_item">
+          <div class="img-wrapper">
+            <img src="./img/content/25.webp.jpg" alt="" />
+          </div>
+          <h4>“花少团”欢乐日常</h4>
+          <p>一起定格美好的瞬间</p>
+        </div>
+        <div class="hover_item">
+          <div class="img-wrapper">
+            <img src="./img/content/26.webp.jpg" alt="" />
+          </div>
+          <h4>和王鹤棣于适一起燃脂！</h4>
+          <p>开启“燃烧卡路里”计划</p>
+        </div>
+        <div class="hover_item">
+          <div class="img-wrapper">
+            <img src="./img/content/27.webp.png" alt="" />
+          </div>
+          <h4>“大女主”这不就来了吗？</h4>
+          <p>影后惠英红对我动手了！</p>
+        </div>
+        <div class="hover_item">
+          <div class="img-wrapper">
+            <img src="./img/content/28.webp.png" alt="" />
+          </div>
+          <h4>百元出游必备美妆好物</h4>
+          <p>好用不贵 快来挖空！</p>
+        </div>
+        <div class="hover_item">
+          <div class="img-wrapper">
+            <img src="./img/content/29.webp.png" alt="" />
+          </div>
+          <h4>宝藏女孩阿花荐香指南</h4>
+          <p>涨姿势！快来看看你适合什么香</p>
+        </div>
+      </div>
+    </div>
+    <!-- ********************** 原创精选 end **************************-->
+   
+    <!-- ********************** 看了还会看 start **************************-->
+    <div class="hot_video">
+      <div class="hot_head see">
+        <h2>
+          看了还会看
+          <div class="arrow">
+            <i class="iconfont icon-a-arrowright"></i>
+          </div>
+        </h2>
+      </div>
+      <div class="content">
+        <div class="hover_item">
+          <div class="img-wrapper">
+            <img src="./img/content/1.webp" alt="" />
+          </div>
+          <h4>下一站是幸福</h4>
+          <p>全世界最好的贺繁星元宋</p>
+        </div>
+        <div class="hover_item">
+          <div class="img-wrapper">
+            <img src="./img/content/2.webp" alt="" />
+          </div>
+          <h4>湖南卫视芒果TV跨年晚会</h4>
+          <p>12月31日19:30 一起热烈向前</p>
+        </div>
+        <div class="hover_item">
+          <div class="img-wrapper">
+            <img src="./img/content/3.webp" alt="" />
+          </div>
+          <h4>声生不息·家年华·加更版</h4>
+          <p>汪苏泷周深演我汇报工作</p>
+        </div>
+        <div class="hover_item">
+          <div class="img-wrapper">
+            <img src="./img/content/4.jpg" alt="" />
+          </div>
+          <h4>来者何人</h4>
+          <p>郝蕾不满新生表现现场发飙？</p>
+        </div>
+        <div class="hover_item">
+          <div class="img-wrapper">
+            <img src="./img/content/5.webp" alt="" />
+          </div>
+          <h4>乘风2023·限时免费看！</h4>
+          <p>Ella大放青春回忆杀！</p>
+        </div>
+        <div class="hover_item">
+          <div class="img-wrapper">
+            <img src="./img/content/6.webp" alt="" />
+          </div>
+          <h4>快乐老友记 加更版</h4>
+          <p>陆虎独家焖面获厚米团一致好评</p>
+        </div>
+      </div>
+    </div>
+    <!-- ********************** 看了还会看 end **************************-->
+
+
+    <!-- ********************** 即将上线 start **************************-->
+    <div class="willcome">
+      <h2>
+        即将上线
+        <div class="arrow">
+          <i class="iconfont icon-a-arrowright"></i>
+        </div>
+      </h2>
+      <div class="top-line">
+        <div class="line-item frist-line">
+          明天 10:00
+          <i class="iconfont icon-Play-fill"></i>
+        </div>
+        <div class="line-item">
+          敬请期待
+          <div class="dot"></div>
+        </div>
+        <div class="line-item">
+          敬请期待
+          <div class="dot"></div>
+        </div>
+        <div class="line-item">
+          敬请期待
+          <div class="dot"></div>
+        </div>
+        <div class="line-item">
+          敬请期待
+          <div class="dot"></div>
+        </div>
+        <div class="line-item">
+          敬请期待
+          <div class="dot"></div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="will_content">
+          <img src="./img/电影/1.webp" alt="" />
+          <h4>坚如磐石</h4>
+          <p>张艺谋扫黑悬疑巨作</p>
+          <div class="btn">
+            <span>预约</span>
+          </div>
+          <div class="details-wrapper">
+            <div class="details-top"></div>
+            <div class="details-bottom">
+              <div class="title">坚如磐石</div>
+              <div class="des">
+                简介：在即将坠入深渊的危急关头，辛灵被“神秘人”救出，意外来到了荒石被封印的地方。而荒石却在战斗中身受重伤，元神消散。为了救回荒石，叶罗丽战士们也行动起来，前往奇幻的仙境，开启全新的冒险之旅。在拯救荒石的过程中，辛灵带领孩子一起怀揣勇气与希望，再度探寻爱与成长的真谛。
+              </div>
+              <div class="btn">
+                <span>立即预约</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="will_content">
+          <img src="./img/电影/2.webp" alt="" />
+          <h4>好像也没那么热血沸腾</h4>
+          <p>魏翔艾伦赛场披荆斩棘</p>
+          <div class="btn">
+            <span>预约</span>
+          </div>
+          <div class="details-wrapper1">
+            <div class="details-top"></div>
+            <div class="details-bottom">
+              <div class="title">好像也没那么热血沸腾</div>
+              <div class="des">
+                简介：在即将坠入深渊的危急关头，辛灵被“神秘人”救出，意外来到了荒石被封印的地方。而荒石却在战斗中身受重伤，元神消散。为了救回荒石，叶罗丽战士们也行动起来，前往奇幻的仙境，开启全新的冒险之旅。在拯救荒石的过程中，辛灵带领孩子一起怀揣勇气与希望，再度探寻爱与成长的真谛。
+              </div>
+              <div class="btn">
+                <span>立即预约</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="will_content">
+          <img src="./img/电影/3.webp" alt="" />
+          <h4>前任4：英年早婚</h4>
+          <p>韩庚郑恺遇爱情新挑战</p>
+          <div class="btn">
+            <span>预约</span>
+          </div>
+          <div class="details-wrapper2">
+            <div class="details-top"></div>
+            <div class="details-bottom">
+              <div class="title">前任4：英年早婚</div>
+              <div class="des">
+                简介：在即将坠入深渊的危急关头，辛灵被“神秘人”救出，意外来到了荒石被封印的地方。而荒石却在战斗中身受重伤，元神消散。为了救回荒石，叶罗丽战士们也行动起来，前往奇幻的仙境，开启全新的冒险之旅。在拯救荒石的过程中，辛灵带领孩子一起怀揣勇气与希望，再度探寻爱与成长的真谛。
+              </div>
+              <div class="btn">
+                <span>立即预约</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="will_content">
+          <img src="./img/电影/4.webp" alt="" />
+          <h4>河边的错误</h4>
+          <p>朱一龙颠覆表达荒诞现实</p>
+          <div class="btn">
+            <span>预约</span>
+          </div>
+          <div class="details-wrapper3">
+            <div class="details-top"></div>
+            <div class="details-bottom">
+              <div class="title">河边的错误</div>
+              <div class="des">
+                简介：在即将坠入深渊的危急关头，辛灵被“神秘人”救出，意外来到了荒石被封印的地方。而荒石却在战斗中身受重伤，元神消散。为了救回荒石，叶罗丽战士们也行动起来，前往奇幻的仙境，开启全新的冒险之旅。在拯救荒石的过程中，辛灵带领孩子一起怀揣勇气与希望，再度探寻爱与成长的真谛。
+              </div>
+              <div class="btn">
+                <span>立即预约</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="will_content">
+          <img src="./img/电影/5.webp" alt="" />
+          <h4>GT赛车：极速狂飙</h4>
+          <p>少年追梦改写赛车史</p>
+          <div class="btn">
+            <span>预约</span>
+          </div>
+          <div class="details-wrapper4">
+            <div class="details-top"></div>
+            <div class="details-bottom">
+              <div class="title">GT赛车：极速狂飙</div>
+              <div class="des">
+                简介：在即将坠入深渊的危急关头，辛灵被“神秘人”救出，意外来到了荒石被封印的地方。而荒石却在战斗中身受重伤，元神消散。为了救回荒石，叶罗丽战士们也行动起来，前往奇幻的仙境，开启全新的冒险之旅。在拯救荒石的过程中，辛灵带领孩子一起怀揣勇气与希望，再度探寻爱与成长的真谛。
+              </div>
+              <div class="btn">
+                <span>立即预约</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="will_content">
+          <img src="./img/电影/6.webp" alt="" />
+          <h4>莫斯科行动</h4>
+          <p>张涵予刘德华黄轩高能较量</p>
+          <div class="btn">
+            <span>预约</span>
+          </div>
+          <div class="details-wrapper5">
+            <div class="details-top"></div>
+            <div class="details-bottom">
+              <div class="title">莫斯科行动</div>
+              <div class="des">
+                简介：在即将坠入深渊的危急关头，辛灵被“神秘人”救出，意外来到了荒石被封印的地方。而荒石却在战斗中身受重伤，元神消散。为了救回荒石，叶罗丽战士们也行动起来，前往奇幻的仙境，开启全新的冒险之旅。在拯救荒石的过程中，辛灵带领孩子一起怀揣勇气与希望，再度探寻爱与成长的真谛。
+              </div>
+              <div class="btn">
+                <span>立即预约</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="willfooter">
+        <div class="footer-item">
+          <img src="./img/banner1.png" alt="" />
+        </div>
+        <div class="footer-item">
+          <img src="./img/banner2.png" alt="" />
+        </div>
+        <div class="footer-item">
+          <img src="./img/banner3.jpg" alt="" />
+          <div class="arrow">
+            <i class="iconfont icon-a-arrowright"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ********************** 即将上线 end **************************-->
+
+    <!-- ********************** 心动不设限，TA们很在线 start **************************-->
+    <div class="king_content">
+      <h2>
+        心动不设限，TA们很在线
+        <div class="arrow">
+          <i class="iconfont icon-a-arrowright"></i>
+        </div>
+      </h2>
+      <div class="king_box">
+        <div class="box1 hover_item">
+          <div class="big-wrapper">
+            <img src="./img/king/大图5.webp" alt="" />
+          </div>
+          <h2>《第二十条》背后的公平正义</h2>
+          <p>赵丽颖正当防卫雷佳音诠是大爱</p>
+        </div>
+        <div class="box2">
+          <div class="hover_item">
+            <div class="img-wrapper">
+              <img src="./img/king/33.webp.jpg" alt="" />
+            </div>
+            <h4>励志电影《银河补习班》</h4>
+            <p>差生的逆袭</p>
+          </div>
+          <div class="hover_item">
+            <div class="img-wrapper">
+              <img src="./img/king/34.webp.jpg" alt="" />
+            </div>
+            <h4>《飞驰人生2》你没看懂的细节</h4>
+            <p>车窗上的字母和符号是什么意思</p>
+          </div>
+          <div class="hover_item">
+            <div class="img-wrapper">
+              <img src="./img/king/35.webp.jpg" alt="" />
+            </div>
+            <h4>《一个人的武林》中的高手</h4>
+            <p>封于修真的没人能打过他吗？</p>
+          </div>
+          <div class="hover_item">
+            <div class="img-wrapper">
+              <img src="./img/king/36.webp.jpg" alt="" />
+            </div>
+            <h4>盘点DC四个版本的闪电侠</h4>
+            <p>各有特点，你喜欢哪一版的？</p>
+          </div>
+          <div class="hover_item">
+            <div class="img-wrapper">
+              <img src="./img/king/37.webp.jpg" alt="" />
+            </div>
+            <h4>《第二十条》观众未认出赵丽颖</h4>
+          </div>
+          <div class="hover_item">
+            <div class="img-wrapper">
+              <img src="./img/king/38.webp.jpg" alt="" />
+            </div>
+            <h4>2023年度电影盘点</h4>
+            <p>今年必看！年度高分电影</p>
+          </div>
+          <div class="hover_item">
+            <div class="img-wrapper">
+              <img src="./img/king/39.webp.jpg" alt="" />
+            </div>
+            <h4>贾玲的腹肌，让谁的脸热辣滚烫</h4>
+          </div>
+          <div class="hover_item">
+            <div class="img-wrapper">
+              <img src="./img/king/40.webp.jpg" alt="" />
+            </div>
+            <h4>《灿烂的她》超会演</h4>
+            <p>奶奶和斯然是彼此的礼物</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ********************** 心动不设限，TA们很在线 end **************************-->
+
+
+    <!-- ********************** 美食品鉴现场 start **************************-->
     <div class="food">
-        <div class="food-left">
-            <div class="title">
-                <h2> 美食品鉴现场</h2>
-                <div class="arrow">
-                    <i class="iconfont icon-a-arrowright"></i>
-                </div>
-            </div>
-            <div class="food-bottom">
-                <div class="item">
-                    <div class="item-img">
-                        <img src="./img/food1.jpg" alt="">
-                    </div>
-                    <h4>找到一家嘎嘎实惠的酒馆！</h4>
-                    <p>
-                        好吃好喝还管饱
-                    </p>
-                </div>
-                <div class="item">
-                    <div class="item-img">
-                        <img src="./img/food2.jpg" alt="">
-                    </div>
-                    <h4>找到一家嘎嘎实惠的酒馆！</h4>
-                    <p>
-                        好吃好喝还管饱
-                    </p>
-                </div>
-                <div class="item">
-                    <div class="item-img">
-                        <img src="./img/food3.jpg" alt="">
-                    </div>
-                    <h4>找到一家嘎嘎实惠的酒馆！</h4>
-                    <p>
-                        好吃好喝还管饱
-                    </p>
-                </div>
-                <div class="item">
-                    <div class="item-img">
-                        <img src="./img/food4.jpg" alt="">
-                    </div>
-                    <h4>找到一家嘎嘎实惠的酒馆！</h4>
-                    <p>
-                        好吃好喝还管饱
-                    </p>
-                </div>
-            </div>
+      <div class="food-left">
+        <div class="title">
+          <h2>美食品鉴现场</h2>
+          <div class="arrow">
+            <i class="iconfont icon-a-arrowright"></i>
+          </div>
         </div>
-        <div class="food-right">
-            <div class="title">
-                <h2>芒果·微综艺</h2>
-                <div class="arrow">
-                    <i class="iconfont icon-a-arrowright"></i>
-                </div>
+        <div class="food-bottom">
+          <div class="item">
+            <div class="item-img">
+              <img src="./img/food1.jpg" alt="" />
             </div>
-            <div class="food-bottom">
-                <div class="item">
-                    <div class="item-img">
-                        <img src="./img/food1.jpg" alt="">
-                    </div>
-                    <h4>找到一家嘎嘎实惠的酒馆！</h4>
-                    <p>
-                        好吃好喝还管饱
-                    </p>
-                </div>
-                <div class="item">
-                    <div class="item-img">
-                        <img src="./img/food2.jpg" alt="">
-                    </div>
-                    <h4>找到一家嘎嘎实惠的酒馆！</h4>
-                    <p>
-                        好吃好喝还管饱
-                    </p>
-                </div>
-                <div class="item">
-                    <div class="item-img">
-                        <img src="./img/food3.jpg" alt="">
-                    </div>
-                    <h4>找到一家嘎嘎实惠的酒馆！</h4>
-                    <p>
-                        好吃好喝还管饱
-                    </p>
-                </div>
+            <h4>找到一家嘎嘎实惠的酒馆！</h4>
+            <p>好吃好喝还管饱</p>
+          </div>
+          <div class="item">
+            <div class="item-img">
+              <img src="./img/food2.jpg" alt="" />
             </div>
+            <h4>找到一家嘎嘎实惠的酒馆！</h4>
+            <p>好吃好喝还管饱</p>
+          </div>
+          <div class="item">
+            <div class="item-img">
+              <img src="./img/food3.jpg" alt="" />
+            </div>
+            <h4>找到一家嘎嘎实惠的酒馆！</h4>
+            <p>好吃好喝还管饱</p>
+          </div>
+          <div class="item">
+            <div class="item-img">
+              <img src="./img/food4.jpg" alt="" />
+            </div>
+            <h4>找到一家嘎嘎实惠的酒馆！</h4>
+            <p>好吃好喝还管饱</p>
+          </div>
         </div>
+      </div>
+      <div class="food-right">
+        <div class="title">
+          <h2>芒果·微综艺</h2>
+          <div class="arrow">
+            <i class="iconfont icon-a-arrowright"></i>
+          </div>
+        </div>
+        <div class="food-bottom">
+          <div class="item">
+            <div class="item-img">
+              <img src="./img/food1.jpg" alt="" />
+            </div>
+            <h4>找到一家嘎嘎实惠的酒馆！</h4>
+            <p>好吃好喝还管饱</p>
+          </div>
+          <div class="item">
+            <div class="item-img">
+              <img src="./img/food2.jpg" alt="" />
+            </div>
+            <h4>找到一家嘎嘎实惠的酒馆！</h4>
+            <p>好吃好喝还管饱</p>
+          </div>
+          <div class="item">
+            <div class="item-img">
+              <img src="./img/food3.jpg" alt="" />
+            </div>
+            <h4>找到一家嘎嘎实惠的酒馆！</h4>
+            <p>好吃好喝还管饱</p>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- 广告 -->
+    <!-- ********************** 美食品鉴现场 end **************************-->
+
+    <!-- ********************** 广告 start **************************-->
     <div class="ad">
-        <h2>广告
-            <div class="arrow">
-                <i class="iconfont icon-a-arrowright"></i>
-            </div>
-        </h2>
-        <div class="swiper">
-            <div class="swiper-item">
-                <div class="swiper1"></div>
-                <div class="swiper-11"></div>
-            </div>
-            <div class="swiper-item">
-                <div class="swiper2"></div>
-                <div class="swiper-22"></div>
-            </div>
-            <div class="swiper-item">
-                <div class="swiper3"></div>
-                <div class="swiper-33"></div>
-            </div>
-            <div class="swiper-item">
-                <div class="swiper4"></div>
-                <div class="swiper-44"></div>
-            </div>
-            <div class="swiper-item">
-                <div class="swiper-55"></div>
-                <div class="swiper5"></div>
-            </div>
-            <div class="swiper-item">
-                <div class="swiper-66"></div>
-                <div class="swiper6"></div>
-            </div>
-            <div class="swiper-item">
-                <div class="swiper-77"></div>
-                <div class="swiper7"></div>
-            </div>
+      <h2>
+        广告
+        <div class="arrow">
+          <i class="iconfont icon-a-arrowright"></i>
         </div>
+      </h2>
+      <div class="swiper">
+        <div class="swiper-item">
+          <div class="swiper1"></div>
+          <div class="swiper-11"></div>
+        </div>
+        <div class="swiper-item">
+          <div class="swiper2"></div>
+          <div class="swiper-22"></div>
+        </div>
+        <div class="swiper-item">
+          <div class="swiper3"></div>
+          <div class="swiper-33"></div>
+        </div>
+        <div class="swiper-item">
+          <div class="swiper4"></div>
+          <div class="swiper-44"></div>
+        </div>
+        <div class="swiper-item">
+          <div class="swiper-55"></div>
+          <div class="swiper5"></div>
+        </div>
+        <div class="swiper-item">
+          <div class="swiper-66"></div>
+          <div class="swiper6"></div>
+        </div>
+        <div class="swiper-item">
+          <div class="swiper-77"></div>
+          <div class="swiper7"></div>
+        </div>
+      </div>
     </div>
+    <!-- ********************** 广告 end **************************-->
+
+    <!-- ********************** 看了还会看 start **************************-->
+    <div class="hot_video">
+      <div class="hot_head see">
+        <h2>
+          看了还会看
+          <div class="arrow">
+            <i class="iconfont icon-a-arrowright"></i>
+          </div>
+        </h2>
+      </div>
+      <div class="content">
+        <div class="hover_item">
+          <div class="img-wrapper">
+            <img src="./img/content/1.webp" alt="" />
+          </div>
+          <h4>下一站是幸福</h4>
+          <p>全世界最好的贺繁星元宋</p>
+        </div>
+        <div class="hover_item">
+          <div class="img-wrapper">
+            <img src="./img/content/2.webp" alt="" />
+          </div>
+          <h4>湖南卫视芒果TV跨年晚会</h4>
+          <p>12月31日19:30 一起热烈向前</p>
+        </div>
+        <div class="hover_item">
+          <div class="img-wrapper">
+            <img src="./img/content/3.webp" alt="" />
+          </div>
+          <h4>声生不息·家年华·加更版</h4>
+          <p>汪苏泷周深演我汇报工作</p>
+        </div>
+        <div class="hover_item">
+          <div class="img-wrapper">
+            <img src="./img/content/4.jpg" alt="" />
+          </div>
+          <h4>来者何人</h4>
+          <p>郝蕾不满新生表现现场发飙？</p>
+        </div>
+        <div class="hover_item">
+          <div class="img-wrapper">
+            <img src="./img/content/5.webp" alt="" />
+          </div>
+          <h4>乘风2023·限时免费看！</h4>
+          <p>Ella大放青春回忆杀！</p>
+        </div>
+        <div class="hover_item">
+          <div class="img-wrapper">
+            <img src="./img/content/6.webp" alt="" />
+          </div>
+          <h4>快乐老友记 加更版</h4>
+          <p>陆虎独家焖面获厚米团一致好评</p>
+        </div>
+      </div>
+    </div>
+    <!-- ********************** 看了还会看 end **************************-->
+
+
+    <!-- ********************** footer start **************************-->
     <div class="bottom">
-        <img src="./img/bottom.png" alt="">
-        <ul>
-            <li>天宇传媒</li>
-            <li>芒果V基金</li>
-            <li>快乐购</li>
-            <li>湖南省广播电视协会</li>
-        </ul>
+      <img src="./img/bottom.png" alt="" />
+      <ul>
+        <li>天宇传媒</li>
+        <li>芒果V基金</li>
+        <li>快乐购</li>
+        <li>湖南省广播电视协会</li>
+      </ul>
     </div>
     <div class="footer">
-        <ul class="list_1">
-            <li>公司介绍</li>
-            <li></li>
-            <li>关于我们</li>
-            <li></li>
-            <li>公司动态</li>
-            <li></li>
-            <li>反盗版盗链声明</li>
-            <li></li>
-            <li>个人信息保护政策</li>
-            <li></li>
-            <li>下载中心</li>
-        </ul>
-        <p>Copyright 2006-2023 mgtv.com Corporation,All Rights Reserved</p>
-        <p>营业执照湘网文[2018]6786-055号信息网络传播视听节目许可证号：1805107互联网新闻信息服务许可证号：43120170003湘B2-20090004互联网出版许可证：新出网证（湘）字08号</p>
-        <p>湘公网安备湘公网安备 43010502000010号营业性演出许可证号：430000120079广播电视节目制作经营许可证：（湘）字第000090号</p>
-        <div>
-            <img src="./img/footer/hnains.png" alt="">
-            <img src="./img/footer/hngawj.png" alt="">
-            <img src="./img/footer/report.png" alt="">
-            <img src="./img/footer/safety.png" alt="">
-            <img src="./img/footer/wfblxx.png" alt="">
-
-        </div>
-        <p>联系电话 : 4009770707举报电话 : 0731－82871676 侵权视频举报邮箱：copyright@mgtv.com 从业人员违法举报邮箱：web@mgtv.com</p>
-        <p>杜绝虚假报道 欢迎社会监督</p>
+      <ul class="list_1">
+        <li>公司介绍</li>
+        <li></li>
+        <li>关于我们</li>
+        <li></li>
+        <li>公司动态</li>
+        <li></li>
+        <li>反盗版盗链声明</li>
+        <li></li>
+        <li>个人信息保护政策</li>
+        <li></li>
+        <li>下载中心</li>
+      </ul>
+      <p>Copyright 2006-2023 mgtv.com Corporation,All Rights Reserved</p>
+      <p>
+        营业执照湘网文[2018]6786-055号信息网络传播视听节目许可证号：1805107互联网新闻信息服务许可证号：43120170003湘B2-20090004互联网出版许可证：新出网证（湘）字08号
+      </p>
+      <p>
+        湘公网安备湘公网安备
+        43010502000010号营业性演出许可证号：430000120079广播电视节目制作经营许可证：（湘）字第000090号
+      </p>
+      <div>
+        <img src="./img/footer/hnains.png" alt="" />
+        <img src="./img/footer/hngawj.png" alt="" />
+        <img src="./img/footer/report.png" alt="" />
+        <img src="./img/footer/safety.png" alt="" />
+        <img src="./img/footer/wfblxx.png" alt="" />
+      </div>
+      <p>
+        联系电话 : 4009770707举报电话 : 0731－82871676
+        侵权视频举报邮箱：copyright@mgtv.com 从业人员违法举报邮箱：web@mgtv.com
+      </p>
+      <p>杜绝虚假报道 欢迎社会监督</p>
     </div>
-</body>
-<script>
-    const listItems = document.querySelectorAll('.right_list li');
-    const banner = document.querySelector('.banner');
+  </body>
+  <script>
+    const listItems = document.querySelectorAll(".right_list li");
+    const banner = document.querySelector(".banner");
 
     listItems.forEach((item, index) => {
-        item.addEventListener('mouseenter', () => {
-            banner.style.backgroundImage = `url('./img/${index}.webp')`;
-        });
+      item.addEventListener("mouseenter", () => {
+        banner.style.backgroundImage = `url('./img/${index}.webp')`;
+      });
 
-        item.addEventListener('mouseleave', () => {
-            banner.style.backgroundImage = '';
-        });
+      item.addEventListener("mouseleave", () => {
+        banner.style.backgroundImage = "";
+      });
     });
 
-    const swiper = document.querySelector('.swiper');
-    const swiperItems = document.querySelectorAll('.swiper-item');
+    const swiper = document.querySelector(".swiper");
+    const swiperItems = document.querySelectorAll(".swiper-item");
 
     swiperItems.forEach((item, index) => {
-        item.addEventListener('mouseenter', () => {
-            // 滚动到容器最右侧
-            setTimeout(() => {
-                if (index >= 4) {
-                    swiper.scrollLeft = swiper.scrollWidth;
-                } else {
-                    swiper.scrollLeft = 0;
-                }
-            }, 500);
-        });
+      item.addEventListener("mouseenter", () => {
+        // 滚动到容器最右侧
+        setTimeout(() => {
+          if (index >= 4) {
+            swiper.scrollLeft = swiper.scrollWidth;
+          } else {
+            swiper.scrollLeft = 0;
+          }
+        }, 500);
+      });
     });
-
-
-</script>
-
+  </script>
 </html>
