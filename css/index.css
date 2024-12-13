@@ -1285,3 +1285,196 @@ h2 .arrow:hover {
   width: 33%;
   padding-right:20px;
 }
+
+.ad {
+  width: 100%;
+  padding: 25px 0px 25px 50px;
+}
+.ad .arrow .icon-a-arrowright {
+  font-size: 20px;
+  font-weight: 900;
+}
+.ad .arrow:hover {
+  color: #ff5f00;
+}
+.ad .swiper {
+  width: 100%;
+  height: 110px;
+  display: flex;
+  margin-top: 22px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.swiper::-webkit-scrollbar {
+  display: none;
+}
+.swiper-item {
+  height: 100%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.ad .swiper1 {
+  width: 190px;
+  height: 100%;
+  margin-right: 20px;
+  border-radius: 4px;
+  /* 以下可换背景图 */
+  background-color: pink;
+}
+.swiper-11 {
+  width: 0;
+  height: 100%;
+  flex-shrink: 0;
+  border-radius: 4px;
+  /* 以下可换背景图 */
+  background-color: pink;
+  /* background: url('图片路径') no-repeat center;
+  background-size: 100% 100%; */
+  transition: width 0.5s ease;
+}
+.swiper-item:hover .swiper-11 {
+  width: 570px;
+  margin-right: 20px;
+}
+
+/* 第二个 */
+.ad .swiper2 {
+  /* 以下可换背景图 */
+  background-color: rgb(159, 67, 83);
+  width: 190px;
+  height: 100%;
+  margin-right: 20px;
+  border-radius: 4px;
+}
+
+.swiper-22 {
+  width: 0;
+  height: 100%;
+  flex-shrink: 0;
+  border-radius: 4px;
+  /* 以下可换背景图 */
+  background-color: rgb(159, 67, 83);
+  transition: width 0.5s ease;
+}
+.swiper-item:hover .swiper-22 {
+  width: 570px;
+  margin-right: 20px;
+}
+
+/* 第三个 */
+.ad .swiper3 {
+  width: 190px;
+  height: 100%;
+  margin-right: 20px;
+  border-radius: 4px;
+  /* 以下可换背景图 */
+  background-color: rgb(205, 255, 192);
+}
+.swiper-33 {
+  width: 0;
+  height: 100%;
+  flex-shrink: 0;
+  border-radius: 4px;
+  /* 以下可换背景图 */
+  background-color: rgb(205, 255, 192);
+  transition: width 0.5s ease;
+}
+.swiper-item:hover .swiper-33 {
+  width: 570px;
+  margin-right: 20px;
+}
+
+/* 第四个 */
+.ad .swiper4 {
+  width: 190px;
+  height: 100%;
+  margin-right: 20px;
+  border-radius: 4px;
+  /* 以下可换背景图 */
+  background-color: rgb(147, 133, 135);
+}
+.swiper-44 {
+  width: 0;
+  height: 100%;
+  flex-shrink: 0;
+  border-radius: 4px;
+  /* 以下可换背景图 */
+  background-color: rgb(147, 133, 135);
+  transition: width 0.5s ease;
+}
+.swiper-item:hover .swiper-44 {
+  width: 570px;
+  margin-right: 20px;
+}
+
+/* 第五个 */
+.ad .swiper5 {
+  width: 190px;
+  height: 100%;
+  margin-right: 20px;
+  border-radius: 4px;
+  /* 以下可换背景图 */
+  background-color: rgb(192, 230, 255);
+}
+.swiper-55 {
+  width: 0;
+  height: 100%;
+  flex-shrink: 0;
+  border-radius: 4px;
+  /* 以下可换背景图 */
+  background-color: rgb(192, 230, 255);
+  transition: width 0.5s ease;
+}
+.swiper-item:hover .swiper-55 {
+  width: 570px;
+  margin-right: 20px;
+}
+
+/* 第六个 */
+.ad .swiper6 {
+  width: 190px;
+  height: 100%;
+  margin-right: 20px;
+  border-radius: 4px;
+  /* 以下可换背景图 */
+  background-color: rgb(22, 145, 228);
+}
+.swiper-66 {
+  width: 0;
+  height: 100%;
+  flex-shrink: 0;
+  border-radius: 4px;
+  /* 以下可换背景图 */
+  background-color: rgb(22, 145, 228);
+  transition: width 0.5s ease;
+}
+.swiper-item:hover .swiper-66 {
+  width: 570px;
+  margin-right: 20px;
+}
+
+/* 第七个 */
+.ad .swiper7 {
+  width: 190px;
+  height: 100%;
+  margin-right: 20px;
+  border-radius: 4px;
+  /* 以下可换背景图 */
+  background-color: rgb(240, 255, 192);
+}
+.swiper-77 {
+  width: 0;
+  height: 100%;
+  flex-shrink: 0;
+  border-radius: 4px;
+  /* 以下可换背景图 */
+  background-color: rgb(240, 255, 192);
+  transition: width 0.5s ease;
+}
+.swiper-item:hover .swiper-77 {
+  width: 570px;
+  margin-right: 20px;
+}

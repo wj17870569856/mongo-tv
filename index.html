@@ -561,6 +561,7 @@
             </div>
         </div>
     </div>
+    <!-- 美食 -->
     <div class="food">
         <div class="food-left">
             <div class="title">
@@ -646,6 +647,44 @@
             </div>
         </div>
     </div>
+    <!-- 广告 -->
+    <div class="ad">
+        <h2>广告
+            <div class="arrow">
+                <i class="iconfont icon-a-arrowright"></i>
+            </div>
+        </h2>
+        <div class="swiper">
+            <div class="swiper-item">
+                <div class="swiper1"></div>
+                <div class="swiper-11"></div>
+            </div>
+            <div class="swiper-item">
+                <div class="swiper2"></div>
+                <div class="swiper-22"></div>
+            </div>
+            <div class="swiper-item">
+                <div class="swiper3"></div>
+                <div class="swiper-33"></div>
+            </div>
+            <div class="swiper-item">
+                <div class="swiper4"></div>
+                <div class="swiper-44"></div>
+            </div>
+            <div class="swiper-item">
+                <div class="swiper-55"></div>
+                <div class="swiper5"></div>
+            </div>
+            <div class="swiper-item">
+                <div class="swiper-66"></div>
+                <div class="swiper6"></div>
+            </div>
+            <div class="swiper-item">
+                <div class="swiper-77"></div>
+                <div class="swiper7"></div>
+            </div>
+        </div>
+    </div>
     <div class="bottom">
         <img src="./img/bottom.png" alt="">
         <ul>
@@ -680,7 +719,6 @@
             <img src="./img/footer/wfblxx.png" alt="">
 
         </div>
-
         <p>联系电话 : 4009770707举报电话 : 0731－82871676 侵权视频举报邮箱：copyright@mgtv.com 从业人员违法举报邮箱：web@mgtv.com</p>
         <p>杜绝虚假报道 欢迎社会监督</p>
     </div>
@@ -690,14 +728,32 @@
     const banner = document.querySelector('.banner');
 
     listItems.forEach((item, index) => {
-    item.addEventListener('mouseenter', () => {
-        banner.style.backgroundImage = `url('./img/${index}.webp')`;
+        item.addEventListener('mouseenter', () => {
+            banner.style.backgroundImage = `url('./img/${index}.webp')`;
+        });
+
+        item.addEventListener('mouseleave', () => {
+            banner.style.backgroundImage = '';
+        });
     });
 
-    item.addEventListener('mouseleave', () => {
-        banner.style.backgroundImage = '';
+    const swiper = document.querySelector('.swiper');
+    const swiperItems = document.querySelectorAll('.swiper-item');
+
+    swiperItems.forEach((item, index) => {
+        item.addEventListener('mouseenter', () => {
+            // 滚动到容器最右侧
+            setTimeout(() => {
+                if (index >= 4) {
+                    swiper.scrollLeft = swiper.scrollWidth;
+                } else {
+                    swiper.scrollLeft = 0;
+                }
+            }, 500);
+        });
     });
-    });
+
+
 </script>
 
 </html>
